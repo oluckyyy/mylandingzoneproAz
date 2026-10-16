@@ -38,9 +38,9 @@ This project implements a complete **governance, security, networking, and autom
 ## 🏛 Management Group Hierarchy
 
 ```text
-Tenant Root Group
+Tenant Root Group & Subscriptions
 │
-├── Platform (MG)
+├── Azure Platform (MG)
 │   ├── Identity (MG)
 │   ├── Management (MG)
 │   └── Connectivity (MG)
@@ -79,23 +79,23 @@ Tenant Root Group
 │
 └── README.md
 
-📥 Getting Started
+📥 How to Getting Started
 
-Full deployment instructions: docs/getting-started.md
+I have placed the Full deployment instructions: docs/getting-started.md
 
-Quick Start
-git clone https://github.com/tlkone/AzureLandingZoneTF.git
+The Quick Quick Start
+
+git clone ( Yet to be provieded) 
 cd AzureLandingZoneTF/terraform
 
 az login
-az account set --subscription "<your-subscription-id>"
+az account set --subscription "<place your-subscription-id>"
 
 terraform init -backend-config=backend.tfvars
-
 terraform plan -var-file=terraform.tfvars
 terraform apply -var-file=terraform.tfvars
 
-🧪 CI/CD Pipelines
+🧪The  CI/CD Pipelines in Azure DevOps or Octopus Deploy with your variable settings
 
 Full details: docs/pipelines.md
 
